@@ -1,8 +1,8 @@
 PImage bgImg;
 PImage cabbageImg;
 PImage gameoverImg;
-PImage groundhogDowImg;
-PImage groundhogldleImg;
+PImage groundhogDownImg;
+PImage groundhogupImg;
 PImage groundhogLeftImg;
 PImage groundhogRightImg;
 PImage lifeImg;
@@ -26,8 +26,8 @@ void setup() {
    soldierImg = loadImage("img/soldier.png");
    cabbageImg= loadImage("img/cabbage.png");
    gameoverImg= loadImage("img/gameover.jpg");
-   groundhogDowImg= loadImage("img/groundhogDow.png");
-   groundhogldleImg= loadImage("img/groundhogldle.png");
+   groundhogDownImg= loadImage("img/groundhogDown.png");
+   groundhogupImg= loadImage("img/groundhogup.png");
    groundhogLeftImg= loadImage("img/groundhogLeft.png");
    groundhogRightImg= loadImage("img/groundhogRightImg.png");
    restartHoveredImg= loadImage("img/restartHovered.png");
@@ -51,7 +51,7 @@ void draw() {
      stroke(124,204,25);
      line(0,152.5,640,152.5);
      
-     image(groundhogldleImg,320,80);
+     image(groundhogupImg,320,80);
      
      strokeWeight(5.0);
      stroke(255,255,0);
@@ -66,11 +66,9 @@ void draw() {
          x = -80;
          
          fill(value);
-         rect(25, 25, 50, 50);
          
-         image(titleImg, 0,0);
          
-         image(startHoveredImg, 248,360);
+        
      
      
      
@@ -83,25 +81,11 @@ void draw() {
 		// Game Run
 
 		// Game Lose
-}
+
 
 }
-void keyPressed(){
-   if(keyPressed == CODED){ 
-    if (keyCode == DOWN) {
-      y+80;
-    } else if (keyCode == RIGHT) {
-      x-80;
-    } else if (keyCode ==LEFT ) {
-      x+80;
-  
-}
-    rect(x, y, 50, 50);
-    saveFrame("img/soldier.png");
-////////
-void keyReleased(){
+
+
    
   
   
-
-}
