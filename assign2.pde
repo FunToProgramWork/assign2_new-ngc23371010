@@ -85,23 +85,3 @@ void draw() {
 		// Game Lose
 }
 
-}
-void keyPressed(){
-   if(keyPressed == CODED){ 
-    if (keyCode == DOWN) {
-      y+80;
-    } else if (keyCode == RIGHT) {
-      x-80;
-    } else if (keyCode ==LEFT ) {
-      x+80;
-  
-}
-    rect(x, y, 50, 50);
-    saveFrame("img/soldier.png");
-////////
-void keyReleased(){
-   
-  
-  
-
-}
